@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Form Structure</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="inner-container">
+            <h1>HTML5 Form Elements</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="inner-container">
+            <form action="#" method="post">
+
+                <!-- Every input requires a label (label/input pair). The 'for' and 'id' attributes values always have to match. Input elements are self closing tags. -->
+
+                <div>
+                    <label for="text-field">Generic Text Field</label>
+                    <input id="text-field" name="text-field" type="text" placeholder="Hint to fill out" autofocus>
+                </div>
+
+                <!-- email input -->
+                <div>
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email" autocomplete="off">
+                </div>
+
+                <!-- phone input -->
+                <div>
+                    <label for="phone-num">Phone Number</label>
+                    <input id="phone-num" name="phone-num" type="tel" minlength="10" maxlength="10" placeholder="10 digit phone number" required>
+                </div>
+
+                <!-- url input -->
+                <div>
+                    <label for="url">Website URL</label>
+                    <input id="url" name="url" type="url">
+                    <!-- the url type must start with a valid url: http:// or https:// to pass the submit -->
+                </div>
+
+                <div>
+                    <label for="password">Enter Password</label>
+                    <input id="password" name="password" type="password">
+                    <!-- creates a hidden input area -->
+                </div>
+
+                <!-- range slider -->
+                <div>
+                    <label for="range">Range Slider - Select from 1 - 10</label>
+                    <input for="range" name="range" type="range" min="0" max="10" step="1">
+                </div>
+
+                <!-- color selector -->
+                <div>
+                    <label for="color">Select a color</label>
+                    <input id="color" name="color" type="color" value="#505050">
+                </div>
+
+                <!-- fieldsets are used to group form controls, or sections of a form together. The legend elements is the caption of the group. -->
+                <fieldset>
+                    <legend>Radio Button Field</legend>
+                    <!-- Radio buttons have to be connected (by the same name attribute value) to work together -->
+                    <div>
+                        <!-- first value - chocolate ice cream -->
+                        <input id="chocolate" name="ice-cream" value="Chocolate Ice Cream" type="radio">
+                        <label for="chocolate">Chocolate</label>
+                    </div>
+
+                    <div>
+                        <!-- first value - strawberry ice cream -->
+                        <input id="strawberry" name="ice-cream" value="Strawberry Ice Cream" type="radio">
+                        <label for="strawberry">Strawberry</label>
+                    </div>
+
+                    <div>
+                        <!-- first value - lemon meringue ice cream -->
+                        <input id="lemon-meringue" name="ice-cream" value="Lemon Meringue Ice Cream" type="radio">
+                        <label for="lemon-meringue">Lemon Meringue</label>
+                    </div>
+                </fieldset>
+
+
+
+
+                <div>
+                    <input type="submit" value="Send" name="submit">
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
