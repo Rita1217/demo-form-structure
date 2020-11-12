@@ -54,7 +54,7 @@
                 <!-- range slider -->
                 <div>
                     <label for="range">Range Slider - Select from 1 - 10</label>
-                    <input for="range" name="range" type="range" min="0" max="10" step="1">
+                    <input id="range" name="range" type="range" min="0" max="10" step="1">
                 </div>
 
                 <!-- color selector -->
@@ -85,6 +85,46 @@
                         <label for="lemon-meringue">Lemon Meringue</label>
                     </div>
                 </fieldset>
+
+                <fieldset>
+                    <legend>Checkbox Field</legend>
+                    <!-- Checkbox buttons share the same name attribute values to be connected. Checkboxes allow for mutiple selections. -->
+                    <div>
+                        <input id="cookies" name="desert-options" value="cookies" type="checkbox" checked>
+                        <label for="cookies">Cookies</label>
+                    </div>
+                    <div>
+                        <input id="cupcakes" name="desert-options" value="cupcakes" type="checkbox">
+                        <label for="cupcakes">Cupcakes</label>
+                    </div>
+                    <div>
+                        <input id="cheescakes" name="desert-options" value="cheescakes" type="checkbox">
+                        <label for="cheescakes">Chesscakes</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dropdown Select Options</legend>
+                    <label for="select-number">Select a Number from 1 - 5</label>
+                    <select name="select-number" id="select-number">
+                        <option value="0" disabled>Please select a number between 1 and 5</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </fieldset>
+
+                <!-- textarea -->
+                <div>
+                    <label for="contact-message">Leave a Message</label>
+                    <textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea>
+                </div>
+
+
+
+
 
 
 
